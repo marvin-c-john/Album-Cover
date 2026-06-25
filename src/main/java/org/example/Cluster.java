@@ -5,6 +5,10 @@ import java.util.List;
 
 public class Cluster {
 
+    public Pixel getCentroid() {
+        return centroid;
+    }
+
     private Pixel centroid;
     private List<Pixel> assignedPixels;
 
@@ -30,7 +34,6 @@ public class Cluster {
             int sumG = 0;
             int sumB = 0;
 
-            int count = 0;
 
 
             for (int i = 0; i < assignedPixels.size(); i++) {
@@ -49,7 +52,7 @@ public class Cluster {
                 int totalPixels = assignedPixels.size();
                 int avgR = sumR / totalPixels;
                 int avgG = sumG / totalPixels;
-                int avgB = sumB / totalPixels;;
+                int avgB = sumB / totalPixels;
 
                 this.centroid = new Pixel(avgR, avgG, avgB);
 
