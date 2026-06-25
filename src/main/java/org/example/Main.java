@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
     static void main() {
         try {
-            String imagePath = "src/main/resources/yungeen-ace.png";
+            String imagePath = "src/main/resources/chris-brown.jpg";
 
             ImageProcessor processor = new ImageProcessor();
 
@@ -27,7 +27,7 @@ public class Main {
             BufferedImage background = backgroundService.generateBackground(palette, 1920, 1080);
 
 
-            File outputFile = new File("background.png");
+            File outputFile = new File(imagePath + "background.png");
             ImageIO.write(background, "png", outputFile);
 
             System.out.println("Hintergrund wurde gespeichert als: " + outputFile.getAbsolutePath());
