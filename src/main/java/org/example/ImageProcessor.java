@@ -49,6 +49,16 @@ public class ImageProcessor {
                 int r = color.getRed();
                 int g = color.getGreen();
                 int b = color.getBlue();
+
+                // 1. Helligkeit und Sättigung berechnen
+                float[] hsb = Color.RGBtoHSB(r, g, b, null);
+                float saturation = hsb[1];
+                float brightness = hsb[2];
+
+                //  Zu dunkle zu helle graue Pixel überspringen
+                if (brightness < 0.15f || brightness > 0.85f) continue;
+                if (saturation < 0.15f) continue;
+
                 Pixel pixel = new Pixel(r,g,b);
                 pixelList.add(pixel);
 
