@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
     static void main() {
         try {
-            String imagePath = "src/main/resources/chris-brown.jpg";
+            String imagePath = "src/main/resources/nba-youngboy.jpeg";
 
             ImageProcessor processor = new ImageProcessor();
 
