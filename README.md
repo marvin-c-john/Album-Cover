@@ -18,6 +18,11 @@
 | Album-Cover (Input) | Generierter Hintergrund (Output) |
 | :---: | :---: |
 | <img src="src/main/resources/chris-brown.jpg" width="250" alt="Chris Brown - 11:11"> | <img src="src/main/resources/chris-brown.background.png" width="450" alt="Glow Background Purple"> |
+
+### Beispiel 3: Deep Teal / Green
+| Album-Cover (Input) | Generierter Hintergrund (Output) |
+| :---: | :---: |
+| <img src="src/main/resources/nba-youngboy.jpeg" width="250" alt="NBA YoungBoy - Top"> | <img src="src/main/resources/nba-youngboy.jpegbackground.png" width="450" alt="Glow Background Teal"> |
 ---
 
 ## 🚀 Overview
