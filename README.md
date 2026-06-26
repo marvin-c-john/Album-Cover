@@ -166,8 +166,3 @@ ImageIO.write(image, "png", new File("background.png"));
 | K-Means | Color clustering |
 | Bilinear Interpolation | Gradient generation |
 
----
-
-# 📄 License
-
-MIT
